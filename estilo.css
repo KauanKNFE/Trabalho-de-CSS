@@ -1,0 +1,71 @@
+body {
+    font-family: Arial;
+    color: white;
+    background-color: #f77014;
+    margin: 0;
+  }
+  
+  img {
+    max-height: 300px; /* Defina a altura máxima desejada de todas as imagens */
+    align-items: center;
+  }
+  
+  /* Importando a fonte Montserrat */
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+  
+  header {
+    padding: 70px;
+    background-image: linear-gradient(to bottom, #e33c08, #f77014);
+    border-radius: 0 0 40px 40px;
+  }
+  
+  .titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold; /* Negrito */
+    font-size: 50px;
+    text-align: center;
+    color: white;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #433d3d;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .conteudo-padrao {
+    border: 5px solid #444;
+    background-color: #222;
+    margin: auto;
+    padding: 10px;
+    border-radius: 20px;
+    display: inline-block;
+    width: 48%;
+  }
+  
+  .right {
+    background-color: #333;
+  }
+  
+  .left {
+    background-color: #555;
+  }
+  
+  .conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 120px; /* Aumentado o espaçamento para evitar que o footer cubra o conteúdo */
+  }
+  
