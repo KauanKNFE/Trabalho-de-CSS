@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial;
     color: white;
@@ -91,13 +92,39 @@ body {
 
   .texto {
     position: relative;
-    z-index: 1;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     line-height: 1.5;
     letter-spacing: 1px;
-    transition: background-color,  1s ease, color 0.3s ease;
+    transition: all,  1s ease, color 0.3s ease;
     font-weight: bolder;
     padding: 20px;
-    text-align: justify;
+    text-align: center;
   }
+
+  .banner {
+    display: inline-block;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100px;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    width: 370px;
+    border-radius: 40px;
+  }
+  
+  .banner:hover {
+    filter: none;
+    transform: scale(1.5);
+    opacity: 1;
+  } 
+  #intro-pag {
+    display: inline-block;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 200px;
+  }
+  

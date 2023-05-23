@@ -6,27 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Exercicio CSS</title>
   <link rel="stylesheet" href="estilo.css" />
+
+  
 </head>
 
 <body>
-  <div class="intro">
+  <div id="intro-pag">
     <header>
       <h1 class="titulo">Jogos antigos que fizeram história</h1>
     </header>
-    <main class="conteudo">
-      <h2>Lista com jogos influentes:</h2>
-      <nav>
-        <ul>
-          <li><a href="#space">1978 - Space Invaders</a></li>
-          <li><a href="#pac">1980 - Pac Man</a></li>
-          <li><a href="#dk">1981 - Donkey Kong</a></li>
-          <li><a href="#mario">1985 - Super Mario Bros.</a></li>
-        </ul>
-      </nav>
-    </main>
+    <div class="banner spi" onclick="scrollToElement('spi')">
+      <div class="texto">
+        <h2>1978 – Space Invaders</h2>
+      </div>
+    </div>
+    <div class="banner pacm" onclick="scrollToElement('pacm')">
+      <div class="texto">
+        <h2>1980 – Pac-Man</h2>
+      </div>
+    </div>
+    <div class="banner donk" onclick="scrollToElement('donk')">
+      <div class="texto">
+        <h2>1981 – Donkey Kong</h2>
+      </div>
+    </div>
+    <div class="banner mari" onclick="scrollToElement('mari')">
+      <div class="texto">
+        <h2>1985 – Super Mario Bros.</h2>
+      </div>
+    </div>
+  </div>
   </div>
   <main id="conteudo-padrao">
-  <div class="conteudo-padrao spi">
+  <div class="conteudo-padrao spi" id="spi">
     <div class="texto">
     <h2 id="space">1978 – Space Invaders</h2>
     <p>
@@ -43,7 +55,7 @@
   </div>
   </div>
 
-  <div class="conteudo-padrao pacm">
+  <div class="conteudo-padrao pacm" id="pacm">
     <div class="texto">
     <h2 id="pac">1980 – Pac-Man</h2>
     <p>
@@ -64,7 +76,7 @@
   </div>
   </div>
 
-  <div class="conteudo-padrao donk">
+  <div class="conteudo-padrao donk" id="donk">
     <div class="texto">
     <h2 id="dk">1981 – Donkey Kong</h2>
     <p>
@@ -83,7 +95,7 @@
   </div>
   </div>
 
-  <div class="conteudo-padrao mari">
+  <div class="conteudo-padrao mari" id="mari">
     <div class="texto">
     <h2 id="mario">1985 – Super Mario Bros.</h2>
     <p>
@@ -108,5 +120,11 @@
       link completo está disponível no código HTML dessa atividade :)
     </p>
   </footer>
+  <script>
+    function scrollToElement(elementId) {
+      const element = document.getElementById(elementId);
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
 </body>
 </html>
