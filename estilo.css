@@ -1,7 +1,9 @@
 body {
     font-family: Arial;
     color: white;
-    background-color: #f77014;
+    background-image: url(space.gif);
+    background-position: center;
+    background-size:cover;
     margin: 0;
   }
   
@@ -15,9 +17,10 @@ body {
   
   header {
     padding: 70px;
-    background-image: linear-gradient(to bottom, #e33c08, #f77014);
+    background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
     border-radius: 0 0 40px 40px;
   }
+
   
   .titulo {
     font-family: 'Montserrat', sans-serif;
@@ -28,13 +31,14 @@ body {
   }
   
   footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    position: bottom;
+    bottom: 0px;
+    left: 0px;
+    top: 100px;
     width: 100%;
-    background-color: #433d3d;
+    background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     border-radius: 10px;
   }
@@ -50,22 +54,50 @@ body {
     margin: auto;
     padding: 10px;
     border-radius: 20px;
-    display: inline-block;
-    width: 48%;
-  }
-  
-  .right {
-    background-color: #333;
-  }
-  
-  .left {
-    background-color: #555;
-  }
-  
-  .conteudo {
+    width: 80%;
+    margin-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 120px; /* Aumentado o espaçamento para evitar que o footer cubra o conteúdo */
+    font-size: 20px;
+    background-size: cover; /* Define o tamanho da imagem de fundo */
+    background-position: center; /* Define a posição da imagem de fundo */
+    filter: blur(8px); /* Ajuste o valor para controlar o desfoque */
+    text-shadow: 8px 8px 16px rgba(0, 0, 0, 0.8); 
+    backdrop-filter: blur;
   }
-  
+  .conteudo-padrao:hover{
+    filter: none;
+  }
+  .conteudo-padrao:hover .texto {
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+  }
+
+  .spi{
+    background-image: url(sp.jpg);
+  }
+  .mari{
+    background-image: url(mario.jpg);
+    background-position: bottom;
+  }
+  .donk{
+    background-image: url(dk.jpg);
+  }
+  .pacm{
+    background-image: url(pacman.jpg);
+  }
+
+  .texto {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    line-height: 1.5;
+    letter-spacing: 1px;
+    transition: background-color,  1s ease, color 0.3s ease;
+    font-weight: bolder;
+    padding: 20px;
+    text-align: justify;
+  }
