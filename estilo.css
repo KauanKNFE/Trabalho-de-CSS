@@ -1,130 +1,153 @@
-
+/* Estilos para o corpo da página */
 body {
-    font-family: Arial;
-    color: white;
-    background-image: url(space.gif);
-    background-position: center;
-    background-size:cover;
-    margin: 0;
-  }
-  
-  img {
-    max-height: 300px; /* Defina a altura máxima desejada de todas as imagens */
-    align-items: center;
-  }
-  
-  /* Importando a fonte Montserrat */
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-  
-  header {
-    padding: 70px;
-    background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
-    border-radius: 0 0 40px 40px;
-  }
+  font-family: Arial; /* Define a fonte para Arial */
+  color: white; /* Define a cor do texto como branco */
+  background-image: url(space.gif); /* Define a imagem de fundo */
+  background-position: center; /* Centraliza a imagem de fundo */
+  background-size: cover; /* Redimensiona a imagem de fundo para cobrir todo o corpo */
+  margin: 0; /* Remove as margens padrão */
+}
 
-  
-  .titulo {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold; /* Negrito */
-    font-size: 50px;
-    text-align: center;
-    color: white;
-  }
-  
-  footer {
-    position: bottom;
-    bottom: 0px;
-    left: 0px;
-    top: 100px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    border-radius: 10px;
-  }
-  
-  a {
-    text-decoration: none;
-    color: white;
-  }
-  
-  .conteudo-padrao {
-    border: 5px solid #444;
-    background-color: #222;
-    margin: auto;
-    padding: 10px;
-    border-radius: 20px;
-    width: 80%;
-    margin-bottom: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    font-size: 20px;
-    background-size: cover; /* Define o tamanho da imagem de fundo */
-    background-position: center; /* Define a posição da imagem de fundo */
-    filter: blur(8px); /* Ajuste o valor para controlar o desfoque */
-    text-shadow: 8px 8px 16px rgba(0, 0, 0, 0.8); 
-    backdrop-filter: blur;
-  }
-  .conteudo-padrao:hover{
-    filter: none;
-  }
-  .conteudo-padrao:hover .texto {
-    border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-  }
+/* Estilos para todas as imagens */
+img {
+  max-height: 300px; /* Define a altura máxima das imagens */
+  align-items: center; /* Centraliza as imagens horizontalmente */
+}
 
-  .spi{
-    background-image: url(sp.jpg);
-  }
-  .mari{
-    background-image: url(mario.jpg);
-    background-position: bottom;
-  }
-  .donk{
-    background-image: url(dk.jpg);
-  }
-  .pacm{
-    background-image: url(pacman.jpg);
-  }
+/* Importando a fonte Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@font-face {
+  font-family: "Neon"; /* Define o nome da fonte */
+  src: url(Neon.ttf); /* Define o caminho para o arquivo de fonte */
+}
 
-  .texto {
-    position: relative;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    line-height: 1.5;
-    letter-spacing: 1px;
-    transition: all,  1s ease, color 0.3s ease;
-    font-weight: bolder;
-    padding: 20px;
-    text-align: center;
-  }
+/* Estilos para o cabeçalho */
+header {
+  padding: 70px; /* Adiciona um espaçamento interno ao cabeçalho */
+  background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0)); /* Define um gradiente linear como imagem de fundo */
+  border-radius: 0 0 40px 40px; /* Adiciona bordas arredondadas na parte inferior do cabeçalho */
+}
 
-  .banner {
-    display: inline-block;
-    align-items: center;
-    justify-content: flex-start;
-    height: 100px;
-    margin-bottom: 20px;
-    background-size: cover;
-    background-position: center;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    width: 370px;
-    border-radius: 40px;
-  }
-  
-  .banner:hover {
-    filter: none;
-    transform: scale(1.5);
-    opacity: 1;
-  } 
-  #intro-pag {
-    display: inline-block;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-bottom: 200px;
-  }
-  
+/* Estilos para o título */
+.titulo {
+  font-family: 'Neon', sans-serif; /* Define a fonte para a fonte importada 'Neon' */
+  font-size: 90px; /* Define o tamanho da fonte */
+  text-align: center; /* Centraliza o texto */
+  color: white; /* Define a cor do texto como branco */
+}
+
+/* Estilos para o rodapé */
+footer {
+  position: bottom; /* Define a posição como fixa na parte inferior da página */
+  bottom: 0px; /* Define a distância do rodapé em relação à parte inferior da página */
+  left: 0px; /* Alinha o rodapé à esquerda */
+  top: 100px; /* Define a distância do topo do rodapé em relação à parte superior da página */
+  width: 100%; /* Define a largura como 100% da largura da página */
+  background-color: rgba(0, 0, 0, 0.7); /* Define a cor de fundo com transparência */
+  color: #fff; /* Define a cor do texto como branco */
+  padding: 10px; /* Adiciona um espaçamento interno */
+  text-align: center; /* Centraliza o texto */
+  border-radius: 10px; /* Adiciona bordas arredondadas */
+}
+
+/* Estilos para links */
+a {
+  text-decoration: none; /* Remove a decoração de sublinhado dos links */
+  color: white; /* Define a cor do link como branco */
+}
+
+/* Estilos para o conteúdo padrão */
+.conteudo-padrao {
+  border: 5px solid #444; /* Adiciona uma borda sólida */
+  background-color: #222; /* Define a cor de fundo */
+  margin: auto; /* Centraliza o elemento horizontalmente */
+  padding: 10px; /* Adiciona um espaçamento interno */
+  border-radius: 20px; /* Adiciona bordas arredondadas */
+  width: 80%; /* Define a largura como 80% */
+  margin-bottom: 10px; /* Adiciona uma margem inferior */
+  display: flex; /* Define o conteúdo como um flex container */
+  flex-wrap: wrap; /* Permite que os elementos dentro do flex container quebrem para a próxima linha */
+  justify-content: space-between; /* Distribui o espaço restante igualmente entre os elementos */
+  font-size: 20px; /* Define o tamanho da fonte */
+  background-size: cover; /* Redimensiona a imagem de fundo para cobrir todo o conteúdo */
+  background-position: center; /* Centraliza a imagem de fundo */
+  filter: blur(8px); /* Aplica um desfoque à imagem de fundo */
+  text-shadow: 8px 8px 16px rgba(0, 0, 0, 0.8); /* Adiciona sombra ao texto */
+  backdrop-filter: blur; /* Aplica um efeito de desfoque ao plano de fundo */
+}
+
+/* Estilos quando o mouse passa sobre o conteúdo padrão */
+.conteudo-padrao:hover {
+  filter: none; /* Remove o desfoque da imagem de fundo */
+}
+
+/* Estilos quando o mouse passa sobre o conteúdo padrão e seu elemento filho .texto */
+.conteudo-padrao:hover .texto {
+  border-radius: 20px; /* Adiciona bordas arredondadas */
+  background-color: rgba(0, 0, 0, 0.7); /* Define a cor de fundo com transparência */
+  color: #fff; /* Define a cor do texto como branco */
+}
+
+/* Estilos para cada classe específica */
+.spi {
+  background-image: url(sp.jpg); /* Define a imagem de fundo */
+}
+
+.mari {
+  background-image: url(mario.jpg); /* Define a imagem de fundo */
+  background-position: bottom; /* Alinha a imagem de fundo na parte inferior */
+}
+
+.donk {
+  background-image: url(dk.jpg); /* Define a imagem de fundo */
+}
+
+.pacm {
+  background-image: url(pacman.jpg); /* Define a imagem de fundo */
+}
+
+/* Estilos para o texto */
+.texto {
+  position: relative; /* Define a posição como relativa */
+  color: #fff; /* Define a cor do texto como branco */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Adiciona sombra ao texto */
+  line-height: 1.5; /* Define a altura da linha do texto */
+  letter-spacing: 1px; /* Define o espaçamento entre as letras */
+  transition: all 1s ease, color 0.3s ease; /* Adiciona uma transição suave */
+  font-weight: bolder; /* Define a espessura da fonte como mais negrito */
+  padding: 20px; /* Adiciona um espaçamento interno */
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Estilos para o banner */
+.banner {
+  display: inline-block; /* Exibe o elemento como um bloco e permite que outros elementos sejam exibidos ao seu lado */
+  align-items: center; /* Centraliza verticalmente o conteúdo do banner */
+  justify-content: center; /* Centraliza horizontalmente o conteúdo do banner */
+  height: 100px; /* Define a altura */
+  margin-bottom: 20px; /* Adiciona uma margem inferior */
+  background-size: cover; /* Redimensiona a imagem de fundo para cobrir todo o banner */
+  background-position: center; /* Centraliza a imagem de fundo */
+  transition: all 0.3s ease; /* Adiciona uma transição suave */
+  cursor: pointer; /* Mostra o cursor como um ponteiro ao passar por cima */
+  width: 48%; /* Define a largura como 48% */
+  border-radius: 20px; /* Adiciona bordas arredondadas */
+}
+
+/* Estilos quando o mouse passa sobre o banner */
+.banner:hover {
+  filter: none; /* Remove quaisquer filtros aplicados */
+  transform: scale(1.5); /* Aumenta o tamanho do banner */
+  opacity: 1; /* Define a opacidade como 100% */
+}
+
+/* Estilos para o elemento com o id 'intro-pag' */
+#intro-pag {
+  display: inline-block; /* Exibe o elemento como um bloco e permite que outros elementos sejam exibidos ao seu lado */
+  flex-direction: column; /* Define a direção das colunas */
+  align-items: flex-start; /* Alinha o conteúdo à esquerda */
+  padding-bottom: 200px; /* Adiciona um espaçamento inferior */
+  display: flex; /* Define o conteúdo como um flex container */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+}

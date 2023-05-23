@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Exercicio CSS</title>
+  <title>Site de Jogos</title>
   <link rel="stylesheet" href="estilo.css" />
 
   
@@ -13,7 +13,7 @@
 <body>
   <div id="intro-pag">
     <header>
-      <h1 class="titulo">Jogos antigos que fizeram história</h1>
+      <h1 class="titulo">Jogos antigos que fizeram historia</h1>
     </header>
     <div class="banner spi" onclick="scrollToElement('spi')">
       <div class="texto">
@@ -121,10 +121,13 @@
     </p>
   </footer>
   <script>
+    // Função para rolar suavemente até um elemento específico na página
     function scrollToElement(elementId) {
+      // Obtém o elemento com o ID fornecido
       const element = document.getElementById(elementId);
+      // Rola suavemente até o elemento usando o comportamento 'smooth'
       element.scrollIntoView({ behavior: 'smooth' });
     }
-  </script>
+  </script>  
 </body>
 </html>
