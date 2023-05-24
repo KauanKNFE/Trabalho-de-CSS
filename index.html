@@ -11,7 +11,6 @@
 </head>
 
 <body>
-  <button id="btnVoltarTopo"></button>
   <div id="intro-pag">
     <header>
       <h1 class="titulo">Jogos antigos que fizeram historia</h1>
@@ -129,26 +128,6 @@
       // Rola suavemente até o elemento usando o comportamento 'smooth'
       element.scrollIntoView({ behavior: 'smooth' });
     }
-  </script>
-  <script>
-      window.addEventListener('scroll', function() {
-  var btnVoltarTopo = document.getElementById('btnVoltarTopo');
-  // Verifica a posição vertical da página
-  if (window.pageYOffset > 300) {
-    // Se a posição for maior que 300 pixels, exibe o botão
-    btnVoltarTopo.style.display = 'block';
-  } else {
-    // Caso contrário, oculta o botão
-    btnVoltarTopo.style.display = 'none';
-  }
-});
-// Adiciona um evento de clique ao botão para rolar suavemente para o topo da página
-document.getElementById('btnVoltarTopo').addEventListener('click', function() {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-});
   </script>
 </body>
 </html>
